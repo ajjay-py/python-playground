@@ -21,3 +21,26 @@ def build_persion(f_name, l_name, age=None):
 
 musician = build_persion('ajay', 'rathore', age=35)
 print(musician)
+
+#### using a function with a while loop
+#using a function with while loop #
+def get_formatted_name(f,l):
+    """return a fully name with neatly"""
+    full_name = f"{f} {l}"
+    return full_name.title()
+
+#This is a infinite loop
+while True:
+    print("\nPlease tell me your name:")
+    print("(enter 'q' at any time to quit)")
+
+    f = input("first name: ")
+    if f == 'q':
+        break
+    l = input("last name: ")
+    if l == 'q':
+        break
+
+    formatted_name = get_formatted_name(f,l)
+    print(f"\nHello {formatted_name}")
+
