@@ -44,3 +44,13 @@ while True:
     formatted_name = get_formatted_name(f,l)
     print(f"\nHello {formatted_name}")
 
+
+    ##CITY DETAILS###
+    def city_country(c_name , country):
+    """Details about city and country."""
+    city_detail = f'"{c_name},{country}"'
+    return city_detail.title()
+
+c_detail = city_country('pune', 'india')
+print(c_detail)
+
