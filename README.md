@@ -10,3 +10,14 @@ def get_formatted_name(f_name, l_name):
 
 musician = get_formatted_name('jimi', 'hendrix')
 print(musician)
+
+##None default
+def build_persion(f_name, l_name, age=None):
+    """Return a dictionary of info about a person"""
+    person = {'first': f_name, 'last': l_name}
+    if age:
+        person['age'] = age
+    return person
+
+musician = build_persion('ajay', 'rathore', age=35)
+print(musician)
