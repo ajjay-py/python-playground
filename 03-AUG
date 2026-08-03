@@ -12,4 +12,25 @@ print(f"\nThe completed designs are below: ")
 for completed_model in completed_models:
     print(completed_model)
 
-###########
+###########for above programm, defining a function #############
+def print_models(unprinted_models, completed_models):
+    """Defining to the all models that are printed."""
+
+    while unprinted_models:
+        current_models = unprinted_models.pop()
+        print(f"Currntly printing: {current_models}")
+        completed_models.append(current_models)
+
+def show_completed_models(completed_models):
+    """Display all the complted designs."""
+
+    print(f"\nThe completed designs are below: ")
+    for completed_model in completed_models:
+        print(completed_model)
+
+
+unprinted_models = ['robot','clock','cycle']
+completed_models = []
+
+print_models(unprinted_models,completed_models)
+show_completed_models(completed_models)
