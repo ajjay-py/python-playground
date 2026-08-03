@@ -54,3 +54,12 @@ while True:
 c_detail = city_country('pune', 'india')
 print(c_detail)
 
+#######Date: 3-AUG-2026 ##############
+def greet_user(names):
+    """Print a simple greet message to user."""
+    for name in names:
+        msg = f"Hello, {name.title()}!"
+        print(msg)
+
+usernames = ['sam','pam','jam']
+greet_user(usernames)
