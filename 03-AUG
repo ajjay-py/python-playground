@@ -1,0 +1,15 @@
+unprinted_models = ['robot','clock','cycle']
+completed_models = []
+
+while unprinted_models:
+    current_models = unprinted_models.pop()
+    print(f"Currntly printing: {current_models}")
+    completed_models.append(current_models)
+
+#display all the designs
+
+print(f"\nThe completed designs are below: ")
+for completed_model in completed_models:
+    print(completed_model)
+
+###########
