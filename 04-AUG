@@ -21,3 +21,27 @@ user_profile = build_profile('albert', 'einstein',
                              location='princeton',
                              field='physics')
 print(user_profile)
+
+#practice 
+x = 3
+a = complex(x)
+print(a)
+
+import random
+print(random.randrange(1,10))
+
+x = "1234"
+print(type(x))
+y = int(x)
+print(y)
+
+for x in 'banana':
+    print('*****')
+
+txt = "The best thing in life are free!."
+if 'free' in txt:
+    print("Yes, 'free' is present in txt.")
+
+txt = "The best thing in life are free!."
+if "expensive" not in txt:
+    print("Yes, 'expensive' is not present in txt.")
