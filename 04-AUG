@@ -1,0 +1,10 @@
+#PASSING AN ARBITRARY NUMBER IN FUNCTION
+# USING '*' IN PARAMETER
+def make_pizza(*toppings):
+    """Making a pizza with the following toppings."""
+    print("\nMaking the pizza with the following toppings: ")
+    for topping in toppings:
+        print(f" - {topping}")
+
+make_pizza('peperoni')
+make_pizza('peperoni','cheese','mushrooms')
