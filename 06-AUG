@@ -1,0 +1,33 @@
+a = " Hello, world! "
+print(a)
+print(a.replace("H", "P"))
+print(a.split())
+
+#print illegal character 
+txt = "We are the so-called "Vikings" from the north." #this will give an error
+
+txt = "we are the so-called \"Vikings\" from the north."
+print(txt.capitalize())
+print(txt.upper())
+
+msg = "PYTHON IS GOOD."
+print(msg.casefold())
+print(msg.lower())
+
+print(msg.encode())
+print(msg.find("S"))
+print(msg.splitlines())
+
+x = "I will be THe MASTER of PYTHON one day."
+print(x.swapcase())
+
+print(bool("Hello"))
+print(bool(15))
+
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
