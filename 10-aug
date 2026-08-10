@@ -1,0 +1,41 @@
+#practice from the w3school 
+
+# thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+# print(thislist)
+
+lst1 = ['banana','cherry','gvava']
+# print(lst1)
+lst1[2] = 'mango'
+print(lst1)
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:4] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+lst2= lst1[:]
+print(lst2)
+lst2.insert(1, 'kaddu')
+print(lst2)
+
+lst1.extend(lst2)
+print(lst1)
+
+mytup = ('rice','potato',1)
+lst1.extend(mytup)
+print(lst1)
+
+lst1.remove('banana') #removes the first occurence only
+print(lst1)
+
+popped_lst = lst1.pop(-2)
+print(popped_lst)
+
+del lst1[3] ## removes the specified index only 
+print(lst1)
+
+del popped_lst
+# print(popped_lst)
+
+print(lst2)
+lst2.clear() #list remains bus items are cleared
+print(lst2)
