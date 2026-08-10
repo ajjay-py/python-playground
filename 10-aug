@@ -53,3 +53,40 @@ i = 0
 while i < len(lst1):
     print(lst1[i])
     i += 1
+
+# List Comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+## list comprehension
+
+lst1 = [x for x in fruits if 'a' in x]
+print(lst1)
+
+lst2 = [x for x in fruits if x != 'apple']
+print(lst2)
+
+lst3 = [x for x in fruits]
+print(lst3)
+
+lst4 = [x for x in range(10)]
+print(lst4)
+
+lst5 = [x for x in range(10) if x < 5]
+print(lst5)
+
+lst6 = [x.upper() for x in fruits]
+print(lst6)
+
+lst7 = ['hello' in fruits]
+print(lst7)
+
+#return orange instead of banana
+lst8 = [x if x != 'banana' else 'orange' for x in fruits] #"Return the item if it is not banana, if it is banana return orange".
+print(lst8)
