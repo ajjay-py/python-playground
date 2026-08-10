@@ -39,3 +39,17 @@ del popped_lst
 print(lst2)
 lst2.clear() #list remains bus items are cleared
 print(lst2)
+
+print(lst1)
+for a in lst1:
+    print(a)
+
+print(len(lst1))
+# for i in range(len(lst1)):
+#     # print(i)
+#     print(lst1[i])
+
+i = 0
+while i < len(lst1):
+    print(lst1[i])
+    i += 1
