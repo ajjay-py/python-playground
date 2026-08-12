@@ -1,0 +1,34 @@
+lst1 = [29,39,44,00,55]
+lst1.sort()
+print(lst1)
+
+lst2 = ['zebra','monkey','luka','apple'] #sorting alpnnume ascending orderß
+lst2.sort()
+print(lst2)
+
+lst3 = lst2[:]
+lst3.sort(reverse=True)
+print(lst3)
+
+#Sort the list based on how close the number is to 50:
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
+#sorting with case senstive words
+
+lst4 = ["banana", "Orange", "Kiwi", "cherry"]
+lst4.sort()
+print(lst4)
+
+lst4.sort(key=str.lower) #inbuilt function makes the str lower case
+print(lst4)
+
+lst4.reverse() #reverse without the order of alphanu
+print(lst4)
+
+******** copy list *********
+
