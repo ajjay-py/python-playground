@@ -70,3 +70,23 @@ colors.append("purple")
 colors.remove("red")
 # Print the list
 print(colors)
+
+
+****** TUPLE **********
+
+tup1 = ('alpha','bravo','charlie')
+print(tup1)
+print(type(tup1))
+
+tup2 = 'a','b','c' #tuple can be written without ()
+print(type(tup2))
+
+tup3 = ('delta',)
+print(type(tup3))
+
+tup4 = ()
+print(type(tup4))
+
+tup5 = tuple((1,2,3,4,5)) #making tuple with tuple() method
+print(type(tup5))
+
