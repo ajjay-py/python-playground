@@ -31,4 +31,28 @@ lst4.reverse() #reverse without the order of alphanu
 print(lst4)
 
 ******** copy list *********
+lst1 = ['alpha','bravo','charlie','delta'] #copy*() method
+lst2 = lst1.copy()
+print(lst2)
 
+lst3 = list(lst1) #list() method
+print(lst3)
+
+lst4 = lst3[:] #slice : method
+print(lst4)
+
+#joining of a list
+
+mylst1 = ['a','b','c']
+mylst2 = [1,2,3]
+
+mylst3 = mylst1 + mylst2 # with + method
+print(mylst3)
+
+# for x in mylst2:  #append method
+#     mylst1.append(x)
+
+# print(mylst1)
+
+mylst1.extend(mylst2) #extend method
+print(mylst1)
