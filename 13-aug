@@ -59,3 +59,15 @@ while i < len(tup3):
 
 x = list(tup3)
 print(x)
+
+#multiply tuple 
+
+fruits = ("apple", "banana", "cherry")
+mul = fruits * 2
+print(mul)
+
+mytup = (1,2,3,3,3,3).count(3) #total count of items in a tup
+mytup = (1,2,3,3,3,3).index(3) #find the index position of a item in tup
+print(mytup)
+
+
