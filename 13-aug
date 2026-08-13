@@ -1,0 +1,40 @@
+#modify the tuple -> list ->tuple
+tup1 = ('a','b','c')
+
+x = list(tup1)
+print(x)
+x[1] = 'd'
+print(x)
+y = tuple(x)
+print(y)
+
+#add tuple 
+tup2 = (1,3,4)
+tup1 += tup2
+
+print(tup1)
+
+##unpacking tuple - extract the value back to the variable
+
+nato = ('alpha','bravo','charlie')
+(a,b,c) = nato #unpacking
+
+print(a)
+print(b)
+print(c)
+
+#using * 
+nato1 = ('alpha','bravo','charlie','delta','echo')
+(a,b,*c) = nato1
+print(a)
+print(b)
+print(c)
+
+# using * at middle
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+(green, *tropic, red) = fruits
+
+print(green)
+print(tropic)
+print(red)
