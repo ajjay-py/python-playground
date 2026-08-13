@@ -71,3 +71,48 @@ mytup = (1,2,3,3,3,3).index(3) #find the index position of a item in tup
 print(mytup)
 
 
+###########SET ##############
+
+thisset = {"apple", "banana", "cherry","apple"} #duplicat will not print
+print(thisset)
+
+set1 = {"apple", "banana", "cherry","apple", True,1,2} #True and 1 is same in set
+print(set1)
+
+set2 = {"apple", "banana", "cherry","apple", False,0,2} #False and 0 is same in set
+print(set2)
+
+print(len(thisset))
+
+#set() constructor - create set using this convertor 
+
+nato = ('alpha','beta','gama')
+print(nato)
+natoset = set((nato))
+print(natoset)
+
+for x in natoset: #for loop
+    print(x)
+
+print('gama' in natoset) #in method
+
+print('gama' not in natoset)#not in method
+
+natoset.add('delta') #add item in set
+print(natoset)
+
+abc = {'a','b','c'} #add two set togather - update method
+natoset.update(abc)
+print(natoset)
+
+mynum = [1,3,4,4] #any literal can be added in set - list, tup, dict etc.
+natoset.update(mynum)
+print(natoset)
+
+#remove items with - remove() and discard() method
+
+natoset.remove('delta')
+print(natoset)
+
+natoset.discard('beta') #discard will avoid error if item is not present in the set
+print(natoset)
