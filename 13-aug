@@ -38,3 +38,24 @@ fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 print(green)
 print(tropic)
 print(red)
+
+#looping in tuple 
+
+tup1 = ('a','b','c')
+for x in tup1:
+    print(x)
+
+tup2 = ('a','b','c')
+print(len(tup2))
+
+for x in range(len(tup2)):
+    print(tup2[x])
+
+tup3 = ('a','b','c','d')
+i = 0
+while i < len(tup3):
+    print(tup3[i])
+    i = i + 1
+
+x = list(tup3)
+print(x)
