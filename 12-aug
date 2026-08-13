@@ -90,3 +90,7 @@ print(type(tup4))
 tup5 = tuple((1,2,3,4,5)) #making tuple with tuple() method
 print(type(tup5))
 
+if 4 in tup5:
+    print("Yes, number is present in this tuple.")
+else: 
+    print("Your number is not present in the tuple.")
