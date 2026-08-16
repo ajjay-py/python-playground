@@ -1,0 +1,35 @@
+#union () - add both sets
+
+s1 = {'a','b','c'}
+s2 = {1,2,3}
+s3 = s1.union(s2)
+print(s3)
+
+s4 = s1 | s2 # | it also joins the sets
+print(s4)
+
+#join multiple sets 
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1.union(set2, set3, set4)
+print(myset)
+
+#join another type of data type with union 
+
+x = {"a", "b", "c"}
+y = (1, 2, 3)
+
+z = x.union(y)
+print(z)
+
+#update - insert items from one set to another 
+
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set1.update(set2)
+print(set1)
