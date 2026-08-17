@@ -34,3 +34,25 @@ print(x)
 print(y)
 
 print(thisdict.items())
+
+#check if key exists in the dictionary
+
+if "brand" in thisdict:
+    print("Yes,'brand' is present in the disct.")
+
+
+dict2 = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+if "model" in dict2:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+### change the values
+ 
+dict2["model"] = "Fiesta"
+print(dict2)
+
+dict2.update({"year": 2020})
+print(dict2)
