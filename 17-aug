@@ -90,3 +90,27 @@ del dict1
 thisdict.clear()
 print(thisdict)
 
+
+##looping in dict{}
+
+mydic = {
+    "name": "aj",
+    "village": "anuppur",
+    "pin": 484224
+    }
+
+for x in mydic:         #printing all the keys in dict 
+    print(x)
+
+for y in mydic:         #print all the values only
+    print(mydic[y])
+
+
+for z in mydic.keys():
+    print(z)
+
+for v in mydic.values():
+    print(v)
+
+for i,j in mydic.items():
+    print(i,j)
