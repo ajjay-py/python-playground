@@ -56,3 +56,37 @@ print(dict2)
 
 dict2.update({"year": 2020})
 print(dict2)
+
+#remove items from the dict
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("year")
+print(thisdict)
+
+z = thisdict.popitem()
+
+print(z)
+print(thisdict)
+
+#delete the items from the dictionary 
+
+dict1 = {
+    "name": "ajay",
+    "surname": "rathour",
+    "age": 35,
+    "year": 1991
+}
+
+del dict1["surname"]
+print(dict1)
+
+del dict1
+# print(dict1)
+
+thisdict.clear()
+print(thisdict)
+
