@@ -5,3 +5,32 @@ print(set1)
 print(type(set1))
 
 #dictionary() -- ARRAY
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "colors":['red','green','white'], #items can be any data types
+  "brand": "Tesla" #duplicat key:value will not be printed,as dups are not allowed
+}
+print(thisdict)
+
+print(thisdict["brand"])
+
+print(thisdict.keys())
+
+print(len(thisdict))
+
+#dict() - constructor to make dictionaries
+
+dict1 = dict(name="john", work= "tech", country= "norway")
+print(dict1)
+
+#access dict items
+
+x = thisdict["model"] #normal way
+y = thisdict.get("model") #get method
+
+print(x)
+print(y)
+
+print(thisdict.items())
