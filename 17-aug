@@ -3,3 +3,5 @@
 set1 = frozenset({'a','b','c'})
 print(set1)
 print(type(set1))
+
+#dictionary() -- ARRAY
