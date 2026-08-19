@@ -1,0 +1,50 @@
+#if - else condition 
+
+logged_in = True
+if logged_in:
+    print("He is online.")
+
+#elif - condition 
+
+a = 23
+b = 23
+
+if a > b:
+    print("a is bigger than b.")
+elif a == b:
+    print("a is equal to b.")
+
+########
+age = 25
+
+if age < 13:
+  print("You are a child")
+elif age < 20:
+  print("You are a teenager")
+elif age < 65:
+  print("You are an adult")
+elif age >= 65:
+  print("You are a senior")
+
+#########
+temperature = 22
+
+if temperature > 30:
+  print("It's hot outside!")
+elif temperature > 20:          #elif find the true condition, it will just print and will not go further 
+  print("It's warm outside")
+elif temperature > 10:
+  print("It's cool outside")
+else:
+  print("It's cold outside!")
+
+
+######
+
+# username = "emil"
+username = ""
+
+if len(username) > 0:
+   print(f"Welcome, {username.title()}!")
+else:
+   print("Username can not be empty.")
