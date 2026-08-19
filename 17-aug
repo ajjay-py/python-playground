@@ -114,3 +114,88 @@ for v in mydic.values():
 
 for i,j in mydic.items():
     print(i,j)
+
+######### copy the dictionary ##########
+
+cars = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+newcars = cars.copy()
+print(newcars)
+
+cars.update({"color":"green"})
+print(cars)
+print(newcars)          #adding k:v in original dict will not changed the copied dict
+
+
+###copy using dict() function 
+
+mycars = dict(cars)
+print(mycars)
+
+#nested dictionary - dict in dict
+
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+print(myfamily["child1"])
+
+for x in myfamily:
+    print(x)
+
+for y in myfamily.items():
+    print(y)
+
+for z in myfamily:
+    print(myfamily[z])
+
+
+########## adding 3 dict into 1 dict
+
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfam = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
+print(myfam)
+
+## select particular items
+
+print(myfamily ["child1"]["name"])          #select name of first child
+
+## loop through nested dictionary
+
+for x , y in myfamily.items():
+    print(x + ':')
+
+    for z in y:
+        print('\t' + z + ':', y[z])
