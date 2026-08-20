@@ -1,0 +1,44 @@
+#using SHORTHAND in if-else 
+#shorthand if - one line if
+
+a = 3
+b = 2
+
+if a > b: print("a is greater than b.")
+
+#shorthand if-else
+
+a = 55
+b = 33 
+
+print("A") if a > b else print("B")
+
+# Assign a value
+
+a = 44 
+b = 333
+
+bigger = a if a > b else b
+print("bigger is", bigger)
+
+## multiple condition in one line 
+
+a = 33
+b = 33
+
+print("A") if a > b else print ("=") if a == b else print("B")
+
+#find max value
+
+x = 22
+y = 12
+
+max_value = x if x > y else y
+print("Max value:", max_value)
+
+#setting default value
+
+username = ""
+
+display_name = username if username else "Guest"
+print("Welcome!", display_name)
