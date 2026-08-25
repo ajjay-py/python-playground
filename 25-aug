@@ -1,0 +1,32 @@
+### login validation with nested check 
+
+username = "Emil"
+password = "python123"
+is_active = False #True
+
+if username:
+    if password:
+        if is_active:
+            print("Login successfull.")
+        else:
+            print("Account is not active.")
+    else: 
+        print("Password is not correct.")
+else:
+    print("Username is required.")
+
+
+### grade calculation 
+
+score = 92
+extra_credit = 5
+
+if score >= 90:
+    if extra_credit > 0:
+        print("A+ grade")
+    else:
+        print("A grade")
+elif score >= 80:
+    print("B grade")
+else:
+    print("C grade or below.")
