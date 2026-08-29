@@ -1,0 +1,57 @@
+for x in 'banana':
+    print(x)
+
+
+#break statement 
+
+fruits = ["apple","banana","cherry"]
+
+for x in fruits:
+    print(x)
+    if x == "banana":
+        break
+
+# continue statement
+
+for x in fruits:
+    if x == "banana":
+        continue        #it will check the banana but will not print as contiue with loop 
+    print(x)
+
+
+# range () function 
+
+for x in range(5):
+    print(x)
+
+print("------------")
+for y in range(2,10):
+    print(y)
+
+print("------------")
+
+for z in range(2,20,2):
+    print(z)
+
+# else in for loop
+
+for x in range(4):
+    if x == 2: break # if u use break, else will not print
+    print(x)
+else:
+    print("loop is finished now.")
+
+
+#nested loop
+
+num = [1,2,3]
+name = ['a','b','c']
+
+for x in num:
+    for y in name:
+        print(x,y)
+
+#pass statement 
+
+for x in [0,1,2]:
+    pass
