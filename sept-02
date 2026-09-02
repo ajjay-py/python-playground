@@ -56,3 +56,13 @@ def my_anim(animal,name,age):
   print("I have a" , animal, "his name is", name , "he is old", age)
 
 my_anim("dog",name="nammy",age=4)
+
+### passing different data types 
+
+def fruit_fun(fruits):
+  for fruit in fruits:
+    print(fruit)
+
+my_fruits = ['apple',"cherry",'banana']
+fruit_fun(my_fruits)
+
