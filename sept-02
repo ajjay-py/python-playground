@@ -1,1 +1,58 @@
+# python functions#
 
+A function is a block of code which only runs when it is called.
+A function can return data as a result.
+A function helps avoiding code repetition.
+
+def my_function():
+  print("Hello from a function")
+
+my_function()
+my_function()
+my_function()
+####
+
+def fernhite_to_celcius(fernhite):
+  return(fernhite - 32) * 5 / 9
+
+print(fernhite_to_celcius(100))
+
+### 
+
+def get_greeting():
+  return "Hello from a function."
+
+message = get_greeting()
+print(message)
+
+#### parameters vs arguments
+
+def my_fun(name):  #this is parameter 
+  print("Hello" , name)
+
+my_fun("Emil") #this is arguments
+
+#default parameter
+
+def my_function(name = "friend"):
+  print("Hello", name)
+
+my_function("Emil")
+my_function("Tobias")
+my_function()
+my_function("Linus")
+
+## keyword arguments
+
+def my_pet(animal,name):
+  print("I have a", animal)
+  print("His name is", name)
+
+my_pet(name="effy",animal="dog")
+
+#positional arguments
+
+def my_anim(animal,name,age):
+  print("I have a" , animal, "his name is", name , "he is old", age)
+
+my_anim("dog",name="nammy",age=4)
