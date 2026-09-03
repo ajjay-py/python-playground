@@ -46,3 +46,19 @@ def my_fun5(*,name):
     print("name:", name)
 
 my_fun5(name="ajay")
+
+## *args and **kwargs arguments -- accept unknown number of arguments
+
+def my_fun1(*kids):
+    print("Name of the child is:", kids[3])
+
+my_fun1('emil','burny','jemm','anu')
+
+## *args with regular arguments
+
+def my_fun2(greeting,*names):
+    for name in names:
+        print(greeting,name)
+
+my_fun2("Hello",'a','g','c')
+
