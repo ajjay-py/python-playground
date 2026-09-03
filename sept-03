@@ -1,0 +1,48 @@
+## dictionary as argument
+
+def my_function(person):
+    print("Name :", person["name"])
+    print("Age :", person["age"])
+
+my_person = {"name":"emil", "age":23}
+my_function(my_person)
+
+
+## return values
+
+def my_fun1(x,y):
+    return x+y
+
+result = my_fun1(3,4)
+print(result)
+
+## return a list
+
+def my_fun2():
+    return ['apple','cherry','banana']
+
+fruits = my_fun2()
+print(fruits[2])
+
+## function returns a tuple
+
+def my_fun3():
+    return (2,3)
+
+x,y = my_fun3()
+print("x:", x)
+print("y:", y)
+
+## positional-only argument 
+
+def my_func4(name, /):
+  print("Hello", name)
+
+my_func4("Emil")
+
+## keyword-only argument
+
+def my_fun5(*,name):
+    print("name:", name)
+
+my_fun5(name="ajay")
